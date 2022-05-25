@@ -9,22 +9,15 @@ class Solution:
         result, stack, index = [0] * length, [], length - 1
 
         while head is not None:
-            cur = head.val
-            if len(stack) == 0:
-                result[index] = 0
-            elif stack[-1] > cur:
-                result[index] = stack[-1]
-            else:
-                while len(stack) != 0 and stack[-1] <= cur:
-                    stack.pop()
-                continue
+            while len(stack) != 0 and stack[-1] <= head.val:
+                stack.pop()
+            result[index] = 0 if len(stack) == 0 else stack[-1]
 
-            stack.append(cur)
+            stack.append(head.val)
             index -= 1
             head = head.next
 
         return result
-
 
     def reverse_list_and_get_length(self, head: ListNode) -> (ListNode, int):
         current = head
