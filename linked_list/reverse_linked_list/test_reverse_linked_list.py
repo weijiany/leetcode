@@ -1,21 +1,9 @@
-from typing import List, Optional
+from typing import List
 
 import pytest
 
-from .list_node import ListNode
 from .reverse_linked_list import Solution
-
-
-def gen_list(vals: List[int]) -> Optional[ListNode]:
-    if vals is []:
-        return None
-
-    head = ListNode(vals[0])
-    cur = head
-    for index in range(1, len(vals)):
-        cur.next = ListNode(vals[index])
-        cur = cur.next
-    return head
+from ..common import gen_list
 
 
 @pytest.mark.parametrize("vals", (
