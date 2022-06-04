@@ -8,7 +8,7 @@ class Solution:
         current = head
         result = None
 
-        while current is not None:
+        while current:
             next_loop_node = current.next
             current.next = result
             result = current

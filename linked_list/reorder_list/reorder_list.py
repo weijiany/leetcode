@@ -17,12 +17,12 @@ class Solution:
         head.next = None
 
         cursor = ListNode()
-        while left is not None or right is not None:
+        while left or right:
             cursor, left = self.change_node(cursor, left)
             cursor, right = self.change_node(cursor, right)
 
     def change_node(self, head: ListNode, sub_node: ListNode) -> (ListNode, ListNode):
-        if sub_node is not None:
+        if sub_node:
             head.next = sub_node
             sub_node = sub_node.next
             head = head.next
@@ -30,7 +30,7 @@ class Solution:
 
     def len(self, head: ListNode) -> int:
         length: int = 0
-        while head is not None:
+        while head:
             length += 1
             head = head.next
         return length
@@ -38,7 +38,7 @@ class Solution:
     def reverse(self, head: ListNode) -> ListNode:
         result = None
         current = head
-        while current is not None:
+        while current:
             next_loop_node = current.next
             current.next = result
             result = current
