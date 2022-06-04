@@ -3,6 +3,9 @@ from typing import Optional, List
 from linked_list.list_node import ListNode
 
 
+# https://leetcode.cn/problems/next-greater-node-in-linked-list/
+
+
 class Solution:
     def nextLargerNodes(self, head: Optional[ListNode]) -> List[int]:
         head, length = self.reverse_list_and_get_length(head)
