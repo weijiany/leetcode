@@ -2,8 +2,8 @@ from typing import List
 
 import pytest
 
-from .reverse_linked_list import Solution
-from ..common import gen_list
+from leetcode.linked_list.reverse_linked_list.reverse_linked_list import Solution
+from tests.linked_list.common import gen_list
 
 
 @pytest.mark.parametrize("vals", (

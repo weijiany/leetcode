@@ -2,8 +2,8 @@ from typing import List
 
 import pytest
 
-from linked_list.common import gen_list
-from linked_list.next_greater_node_in_linked_list.next_greater_node_in_linked_list import Solution
+from leetcode.linked_list.next_greater_node_in_linked_list.next_greater_node_in_linked_list import Solution
+from tests.linked_list.common import gen_list
 
 
 @pytest.mark.parametrize("vals, expected", [

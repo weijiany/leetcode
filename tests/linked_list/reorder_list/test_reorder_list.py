@@ -2,8 +2,8 @@ from typing import List
 
 import pytest
 
-from linked_list.common import gen_list
-from linked_list.reorder_list.reorder_list import Solution
+from leetcode.linked_list.reorder_list.reorder_list import Solution
+from tests.linked_list.common import gen_list
 
 
 @pytest.mark.parametrize("vals, expected", [

@@ -1,4 +1,4 @@
-from linked_list.list_node import ListNode
+from leetcode.linked_list.list_node import ListNode
 
 # https://leetcode.cn/problems/reorder-list/
 

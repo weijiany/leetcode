@@ -1,6 +1,6 @@
 from typing import Optional, List
 
-from linked_list.list_node import ListNode
+from leetcode.linked_list.list_node import ListNode
 
 
 # https://leetcode.cn/problems/next-greater-node-in-linked-list/

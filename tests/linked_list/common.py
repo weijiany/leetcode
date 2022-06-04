@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from .list_node import ListNode
+from leetcode.linked_list.list_node import ListNode
 
 
 def gen_list(vals: List[int]) -> Optional[ListNode]:
